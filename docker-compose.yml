@@ -1,0 +1,17 @@
+version: '3.8'
+
+services:
+  postgres:
+    image: postgres:15
+    container_name: steam_postgres
+    environment:
+      POSTGRES_DB: steamdb
+      POSTGRES_USER: steam_user
+      POSTGRES_PASSWORD: steam_pass
+    ports:
+      - "5434:5432"
+    volumes:
+      - postgres_data:/var/lib/postgresql/data
+
+volumes:
+  postgres_data:
