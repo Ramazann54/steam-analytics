@@ -4,3 +4,7 @@ __pycache__/
 .env
 data/raw/
 *.csv
+etl.log
+data/processed/
+.ipynb_checkpoints/
+*.log
