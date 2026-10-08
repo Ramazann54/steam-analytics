@@ -38,7 +38,7 @@ game_zscores AS (
 SELECT DISTINCT ON (game_name)
     game_name,
     genre,
-    price,
+    -- price,
     ROUND(avg_price, 2) AS genre_avg_price,
     z_score
 FROM game_zscores
